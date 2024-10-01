@@ -17,7 +17,7 @@ body {
 }
 
 .navbar .nav-links {
-    display: flex;
+    display: flex; /* Makes the navigation horizontal */
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
@@ -33,6 +33,12 @@ body {
 
 .navbar .nav-link:hover {
     color: #0077ff;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 200px; /* Doubled the size of the logo */
+    height: auto;
 }
 
 /* Hero Section */
@@ -77,7 +83,7 @@ body {
 }
 
 .cta-button.no-underline {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; /* Removes underline */
 }
 
 /* Features Section */
@@ -121,4 +127,3 @@ footer {
     text-align: center;
     padding: 20px;
 }
-
