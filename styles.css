@@ -1,4 +1,6 @@
 /* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+
 body {
     background-color: #f4f7fb;
     color: #333;
@@ -28,9 +30,12 @@ body {
 }
 
 .company-name {
-    font-size: 2.5em; /* Make it bigger */
+     font-size: 2.5em; /* Keep it big */
     font-weight: bold;
     color: #333;
+    text-align: center; /* Center text */
+    font-family: 'Lora', serif; /* Professional font */
+    flex-grow: 1; /* Ensures it takes up space to center it */
 }
 
 .navbar .nav-links {
@@ -48,6 +53,11 @@ body {
 .navbar .nav-link:hover {
     color: #0077ff;
 }
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Spacing the nav elements */
+    align-items: center; /* Vertically center items */
+    padding: 0 40px; /* Padding for spacing */
 
 /* Hero Section */
 .hero {
