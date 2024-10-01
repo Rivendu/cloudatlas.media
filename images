@@ -1,1 +1,8 @@
+cloud-atlas-media/
+├── index.html
+├── styles.css
+└── images/
+    ├── cloud-atlas-logo.png
+    ├── mount-fuji-japan-free-photo.webp
+    └── mount-fuji-evening.jpg
 
