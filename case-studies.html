@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar with Horizontal Hamburger Menu -->
     <header class="header">
         <nav class="navbar">
             <div class="logo">
@@ -22,7 +22,7 @@
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger-menu" id="menu-toggle">
+            <div class="hamburger-menu horizontal" id="menu-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -30,27 +30,21 @@
         </nav>
     </header>
 
-    <!-- Case Studies Section with Parallax Background and CTA -->
-    <section id="case-studies" class="case-study">
-        <div class="case-study-background">
-            <img src="images/mount-fuji-evening.jpg" alt="Mount Fuji Evening Background"> <!-- Parallax background -->
-        </div>
-        <div class="container" data-aos="fade-up">
-            <h2>Anonymous Case Study: Optimal Marketing Spend and Strategy</h2>
-            <p>This case study focuses on optimizing the marketing spend and strategy for an e-commerce retailer, ensuring maximum ROI.</p>
-            <a href="contact.html" class="cta-button">Contact Us for More</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Cloud Atlas Media. All rights reserved.</p>
-    </footer>
-
-    <script>
-        AOS.init({
-            duration: 1200,
-        });
-    </script>
-</body>
-</html>
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="case-studies">
+        <h2 data-aos="fade-up">Client Case Studies</h2>
+        <div class="case-study-grid">
+            <div class="case-study-item" data-aos="fade-right">
+                <h3>Client 1 - Paid Media Success</h3>
+                <img src="images/w11917-small.jpg" alt="Case Study Image">
+                <p>Client 1 saw a 300% increase in ROI through targeted paid media campaigns. Our team leveraged data to optimize ad spend and improve audience targeting.</p>
+            </div>
+            <div class="case-study-item" data-aos="fade-left">
+                <h3>Client 2 - Marketing Automation</h3>
+                <img src="images/w11917-small.jpg" alt="Case Study Image">
+                <p>Client 2 streamlined their customer journeys with our marketing automation solutions, resulting in a 40% increase in sales.</p>
+            </div>
+            <div class="case-study-item" data-aos="fade-right">
+                <h3>Client 3 - A/B Testing</h3>
+                <img src="images/w11917-small.jpg" alt="Case Study Image">
+                <p>Client 3 achieved a 20% boost in conversion rates by using our A/B testing strategies to refine their digital marketing assets.</p>
