@@ -37,7 +37,7 @@ body {
 
 /* Logo Styling */
 .logo img {
-    width: 200px; /* Doubled the size of the logo */
+    width: 200px; /* Logo size adjusted */
     height: auto;
 }
 
@@ -118,6 +118,48 @@ body {
 .feature-item p {
     font-size: 1.2em;
     color: #555;
+}
+
+/* Clients Section */
+.clients {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.client-item img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.client-item p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Partners Section */
+.partners {
+    padding: 80px 20px;
+    background-color: #f7f9fb;
+    text-align: center;
+}
+
+.partners-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.partners-grid img {
+    width: 120px;
+    height: auto;
 }
 
 /* Footer */
