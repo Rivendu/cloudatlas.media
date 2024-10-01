@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Agency - Digital Marketing Services</title>
+    <title>Cloud Atlas Media</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
-
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar with Hamburger Menu -->
     <header class="header">
         <nav class="navbar">
-            <div class="logo">Your Agency</div>
+            <div class="logo">
+                <img src="cloud-atlas-logo.png" alt="Cloud Atlas Media" width="120">
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
@@ -21,82 +22,61 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="hamburger-menu" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
-    <!-- Hero Section with Parallax Background -->
+    <!-- Hero Section with Background Image -->
     <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="mount-fuji-japan.jpg" alt="Mount Fuji Background">
+        </div>
         <div class="hero-content" data-aos="fade-up">
-            <h1>Results-Driven Digital Marketing</h1>
-            <p>Optimizing paid media and automation for performance.</p>
+            <h1>Drive Results with Data-Driven Digital Marketing</h1>
+            <p>Specializing in Paid Media, Marketing Automation, and Campaign Optimization.</p>
             <a href="#contact" class="cta-button" data-aos="zoom-in">Get Started</a>
         </div>
     </section>
 
-    <!-- Services Section with Icons -->
+    <!-- Services Section -->
     <section id="services" class="services">
         <h2 data-aos="fade-up">Our Services</h2>
         <div class="services-grid">
             <div class="service-item" data-aos="fade-right">
-                <img src="icons/paid-media.svg" alt="Paid Media Icon" class="service-icon">
                 <h3>Paid Media Management</h3>
                 <p>Maximize your ROAS with optimized campaigns on Google Ads and Meta.</p>
             </div>
             <div class="service-item" data-aos="fade-left">
-                <img src="icons/automation.svg" alt="Marketing Automation Icon" class="service-icon">
                 <h3>Marketing Automation</h3>
                 <p>Seamlessly integrate automation tools to streamline customer journeys.</p>
             </div>
             <div class="service-item" data-aos="fade-right">
-                <img src="icons/data-strategy.svg" alt="Data-Driven Strategy Icon" class="service-icon">
                 <h3>Data-Driven Strategy</h3>
                 <p>Leverage data to drive actionable insights and campaign success.</p>
             </div>
             <div class="service-item" data-aos="fade-left">
-                <img src="icons/ab-testing.svg" alt="A/B Testing Icon" class="service-icon">
                 <h3>A/B Testing & Optimization</h3>
                 <p>Continuously refine performance through testing and insights.</p>
             </div>
         </div>
     </section>
 
-    <!-- Case Studies Section with Parallax Effect -->
-    <section id="case-study" class="case-study" data-aos="fade-up">
+    <!-- Case Studies Section with Parallax -->
+    <section id="case-studies" class="case-study" data-aos="fade-up">
+        <div class="case-study-background">
+            <img src="mount-fuji-evening.jpg" alt="Mount Fuji Evening Background">
+        </div>
         <div class="container">
             <h2 data-aos="fade-up">Anonymous Case Study: Optimal Marketing Spend and Strategy</h2>
             <p data-aos="fade-up">This case study focuses on optimizing the marketing spend and strategy for an e-commerce retailer, ensuring maximum ROI.</p>
-
-            <!-- Overview Section -->
-            <div class="case-section" data-aos="fade-right">
-                <h3>Overview</h3>
-                <p>We worked with a leading e-commerce retailer to analyze their advertising spend across various channels.</p>
-            </div>
-
-            <!-- Approach Section -->
-            <div class="case-section" data-aos="fade-left">
-                <h3>Our Approach</h3>
-                <ul>
-                    <li>Data Cleaning</li>
-                    <li>Segmentation</li>
-                    <li>Analysis</li>
-                </ul>
-            </div>
-
-            <!-- Results Section -->
-            <div class="case-section" data-aos="fade-right">
-                <h3>Key Results</h3>
-                <ul>
-                    <li>Q1: 0.45-0.65 COP%</li>
-                    <li>Q2: 0.55-0.75 COP%</li>
-                    <li>Q3: 0.60-0.80 COP%</li>
-                    <li>Q4: 0.50-0.70 COP%</li>
-                </ul>
-                <p>We recommended a daily marketing spend of 4000 to 8000 Euros during low-demand quarters and SEM optimization for long-term brand awareness.</p>
-            </div>
         </div>
     </section>
 
-    <!-- Contact Section with Animated Form -->
+    <!-- Contact Section -->
     <section id="contact" class="contact" data-aos="fade-up">
         <h2>Contact Us</h2>
         <form action="/submit" method="POST">
@@ -111,13 +91,20 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Agency. All rights reserved.</p>
+        <p>&copy; 2024 Cloud Atlas Media. All rights reserved.</p>
     </footer>
 
     <!-- Initialize AOS Animations -->
     <script>
         AOS.init({
             duration: 1200,
+        });
+
+        // Hamburger Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
         });
     </script>
 </body>
