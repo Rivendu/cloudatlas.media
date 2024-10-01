@@ -1,0 +1,41 @@
+/* Case Studies Section */
+.case-studies {
+    padding: 80px 20px;
+    background-color: #f4f7fb;
+    text-align: center;
+}
+
+.case-studies h2 {
+    font-size: 3em;
+    color: #333;
+}
+
+.case-study-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.case-study-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.case-study-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.case-study-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.case-study-item p {
+    font-size: 1.2em;
+    color: #555;
+}
