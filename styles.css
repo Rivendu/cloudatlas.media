@@ -1,4 +1,6 @@
 /* Global Styles */
+
+    /* Global Styles */
 body {
     background-color: #f4f7fb;
     color: #333;
@@ -28,8 +30,21 @@ body {
     border-bottom: 2px solid #0077ff;
 }
 
-.hamburger-menu {
-    display: none;
+.hamburger-menu.horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.hamburger-menu.horizontal span {
+    width: 30px;
+    height: 4px;
+    background-color: #0077ff;
+    transition: transform 0.3s ease;
+}
+
+.hamburger-menu.horizontal:hover span {
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
@@ -74,22 +89,4 @@ body {
 
 .cta-button {
     background: linear-gradient(135deg, #4ea1d3, #0077ff);
-    color: white;
-    padding: 15px 40px;
-    font-size: 1.4em;
-    border-radius: 50px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.cta-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Footer */
-footer {
-    background: #1a1a1a;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+    color
