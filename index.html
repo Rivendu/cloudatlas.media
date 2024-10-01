@@ -3,74 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DataVision Analytics</title>
+    <title>Your Agency - Digital Marketing Services</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- You can add a framework like Bootstrap for faster design -->
 </head>
 <body>
-
-    <!-- Header Section -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <h1>DataVision</h1>
-            </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">Your Agency</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section id="home" class="hero">
         <div class="hero-content">
-            <h2>Marketing Analytics & Data Science</h2>
-            <p>Unlock the power of data-driven marketing to accelerate growth and ROI.</p>
-            <a href="#contact" class="cta-btn">Get Started</a>
+            <h1>Drive Results with Data-Driven Digital Marketing</h1>
+            <p>Specializing in Paid Media, Marketing Automation, and Campaign Optimization.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="services" id="services">
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>Paid Media Management</h3>
+                <p>Maximize your ROAS with optimized campaigns on Google Ads and Meta.</p>
+            </div>
+            <div class="service-item">
+                <h3>Marketing Automation</h3>
+                <p>Seamlessly integrate automation tools to streamline customer journeys.</p>
+            </div>
+            <div class="service-item">
+                <h3>Data-Driven Strategy</h3>
+                <p>Leverage data to drive actionable insights and campaign success.</p>
+            </div>
+            <div class="service-item">
+                <h3>A/B Testing & Optimization</h3>
+                <p>Continuously refine performance through testing and insights.</p>
+            </div>
+        </div>
+    
+    <!-- Case Study Section -->
+    <section id="case-study" class="case-study">
         <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-box">
-                <div class="service-item">
-                    <h3>Data Analytics</h3>
-                    <p>Transform your data into actionable insights with our cutting-edge analytics services.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Marketing Strategy</h3>
-                    <p>We help you optimize campaigns, boost performance, and drive measurable results.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Data Science</h3>
-                    <p>Advanced algorithms and predictive models to supercharge your marketing efforts.</p>
-                </div>
+            <h2>Anonymous Case Study: Optimal Marketing Spend and Strategy</h2>
+            <p>This case study focuses on optimizing the marketing spend and strategy for an e-commerce retailer, ensuring maximum return on investment across channels.</p>
+
+            <!-- Overview Section -->
+            <div class="case-section">
+                <h3>Overview</h3>
+                <p>We worked with a leading e-commerce retailer to analyze their advertising spend across various channels and determine the optimal cost-per-order percentage (COP%) for maximizing profit.</p>
+            </div>
+
+            <!-- Approach Section -->
+            <div class="case-section">
+                <h3>Our Approach</h3>
+                <ul>
+                    <li><strong>Data Cleaning:</strong> Processed the data, removing unreliable values and grouping by channel and date.</li>
+                    <li><strong>Segmentation:</strong> Grouped data by dates and performed regression analysis to observe trends in relation to ad spend.</li>
+                    <li><strong>Analysis:</strong> Observed differences across quarters to eliminate noise from high-demand periods, providing a clearer picture of cost-efficiency.</li>
+                </ul>
+            </div>
+
+            <!-- Results Section -->
+            <div class="case-section">
+                <h3>Key Results</h3>
+                <p>Our analysis showed the following optimal cost-per-order percentage for maximizing profit in various quarters:</p>
+                <ul>
+                    <li>Q1: 0.45-0.65 COP%</li>
+                    <li>Q2: 0.55-0.75 COP%</li>
+                    <li>Q3: 0.60-0.80 COP%</li>
+                    <li>Q4: 0.50-0.70 COP%</li>
+                </ul>
+                <p>We recommended a daily marketing spend of 4000 to 8000 Euros during low-demand quarters and focused on SEM and Paid Media optimization for long-term brand awareness.</p>
+            </div>
+
+            <!-- Conclusion -->
+            <div class="case-section">
+                <h3>Conclusion</h3>
+                <p>By focusing on the optimal COP% and carefully adjusting our SEM strategies across quarters, we helped the retailer achieve substantial profitability, particularly in key periods like Q4. Further analysis on marketing mix modeling is recommended for future strategy refinement.</p>
             </div>
         </div>
     </section>
-
-    <!-- About Us Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2>About DataVision</h2>
-            <p>We are a team of data scientists and marketing experts committed to driving growth through data. Our innovative solutions are designed to help businesses leverage the full power of analytics to make smarter decisions and achieve their goals.</p>
+    </section>
+    <!-- Case Studies Section -->
+    
+    <section id="case-studies" class="case-studies">
+        <h2>Proven Success</h2>
+        <div class="case-grid">
+            <div class="case-item">
+                <h3>Fashion Retailer Campaign</h3>
+                <p>150% increase in ROAS with multi-channel campaign optimization.</p>
+            </div>
+            <!-- Add more case studies as needed -->
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About [Your Name]</h2>
+        <p>With a background in digital marketing and a Master’s in Statistics from the Stockholm School of Economics, I have successfully managed paid media for top brands.</p>
+    </section>
+
     <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit" class="cta-btn">Send Message
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Agency. All rights reserved.</p>
+    </footer>
+</body>
+</html>
