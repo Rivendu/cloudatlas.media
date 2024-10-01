@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar with Horizontal Hamburger Menu -->
     <header class="header">
         <nav class="navbar">
             <div class="logo">
@@ -22,7 +22,7 @@
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger-menu" id="menu-toggle">
+            <div class="hamburger-menu horizontal" id="menu-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -32,8 +32,20 @@
 
     <!-- About Section -->
     <section id="about" class="about">
-        <h2 data-aos="fade-up">Our Mission</h2>
-        <p data-aos="fade-up">At Cloud Atlas Media, we are committed to helping our clients drive results with data-driven digital marketing solutions.</p>
+        <h2 data-aos="fade-up">About Cloud Atlas Media</h2>
+        <p data-aos="fade-up">Cloud Atlas Media is a digital marketing agency that specializes in data-driven solutions to help businesses achieve measurable success. With a team of experts, we offer tailored strategies in paid media, marketing automation, and campaign optimization.</p>
+        <div class="about-grid">
+            <div class="about-item" data-aos="fade-right">
+                <img src="images/w11917-small.jpg" alt="About Image">
+                <h3>Our Mission</h3>
+                <p>To empower businesses with data-driven strategies that deliver tangible results in the digital marketing landscape.</p>
+            </div>
+            <div class="about-item" data-aos="fade-left">
+                <img src="images/w11917-small.jpg" alt="About Image">
+                <h3>Our Values</h3>
+                <p>We believe in transparency, collaboration, and innovation. We work closely with our clients to ensure their goals are met.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -44,6 +56,13 @@
     <script>
         AOS.init({
             duration: 1200,
+        });
+
+        // Hamburger Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
         });
     </script>
 </body>
