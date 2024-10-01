@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar with Horizontal Hamburger Menu -->
     <header class="header">
         <nav class="navbar">
             <div class="logo">
-                <img src="images/logo.png" alt="Cloud Atlas Media" width="100">
+                <img src="images/logo.png" alt="Cloud Atlas Media" width="100"> <!-- Fixed logo issue -->
             </div>
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Home</a></li>
@@ -22,7 +22,7 @@
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger-menu" id="menu-toggle">
+            <div class="hamburger-menu horizontal" id="menu-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -30,38 +30,4 @@
         </nav>
     </header>
 
-    <!-- Services Section with Improved Layout and Hover Effects -->
-    <section id="services" class="services">
-        <h2 data-aos="fade-up">Our Services</h2>
-        <div class="services-grid">
-            <div class="service-item" data-aos="fade-right">
-                <h3>Paid Media Management</h3>
-                <p>Maximize your ROAS with optimized campaigns on Google Ads and Meta.</p>
-            </div>
-            <div class="service-item" data-aos="fade-left">
-                <h3>Marketing Automation</h3>
-                <p>Seamlessly integrate automation tools to streamline customer journeys.</p>
-            </div>
-            <div class="service-item" data-aos="fade-right">
-                <h3>Data-Driven Strategy</h3>
-                <p>Leverage data to drive actionable insights and campaign success.</p>
-            </div>
-            <div class="service-item" data-aos="fade-left">
-                <h3>A/B Testing & Optimization</h3>
-                <p>Continuously refine performance through testing and insights.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Cloud Atlas Media. All rights reserved.</p>
-    </footer>
-
-    <script>
-        AOS.init({
-            duration: 1200,
-        });
-    </script>
-</body>
-</html>
+    <!-- Services Section
