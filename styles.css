@@ -18,11 +18,7 @@ body {
     padding: 20px 40px;
 }
 
-.logo-text-container {
-    display: flex;
-    align-items: center;
-}
-
+/* Styling for Cloud Atlas Media Brand Name */
 .brand-name {
     font-size: 2.5em;
     font-weight: bold;
@@ -32,27 +28,20 @@ body {
     margin-bottom: 10px; /* Adds space between the text and the menu */
 }
 
-.logo {
-    width: 100px; /* Logo size adjusted */
-    height: auto;
-    margin-right: 10px;
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the menu items */
+    align-items: center;
+    padding: 0 40px;
 }
 
-.company-name {
-     font-size: 2.5em; /* Keep it big */
-    font-weight: bold;
-    color: #333;
-    text-align: center; /* Center text */
-    font-family: 'Lora', serif; /* Professional font */
-    flex-grow: 1; /* Ensures it takes up space to center it */
-}
-
+/* Navigation Links Styling */
 .navbar .nav-links {
     display: flex;
-    justify-content: space-between; /* Space links evenly */
+    justify-content: space-around; /* Space links evenly */
     align-items: center;
     list-style-type: none;
-    margin-left: 40px; /* Move the list slightly to the right */
 }
 
 .navbar .nav-link {
@@ -62,11 +51,6 @@ body {
 .navbar .nav-link:hover {
     color: #0077ff;
 }
-.navbar {
-   display: flex;
-    justify-content: center; /* Center the menu items */
-    align-items: center;
-    padding: 0 40px;
 
 /* Hero Section */
 .hero {
