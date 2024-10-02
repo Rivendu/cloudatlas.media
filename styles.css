@@ -45,8 +45,19 @@ body {
 }
 
 .navbar .nav-link {
-    padding: 0 10px; /* Adjust space between links */
+    padding: 10px 20px; /* Increase padding to make links larger */
+    font-size: 1.2em;  /* Increase font size to make them more prominent */
+    color: #333; /* Ensure the text color is clear and clickable */
+    text-decoration: none; /* Remove the underline */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
+
+.navbar .nav-link:hover {
+    color: #0077ff; /* Make them change color when hovered over */
+    font-weight: bold; /* Make them bolder when hovered */
+    text-decoration: underline; /* Optionally add an underline on hover */
+}
+
 
 .navbar .nav-link:hover {
     color: #0077ff;
