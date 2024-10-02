@@ -25,7 +25,7 @@ body {
     color: #333;
     text-align: center;
     font-family: 'Lora', serif;
-    margin-bottom: 10px; /* Space between brand name and menu */
+    margin-bottom: 10px; /* Adds space between brand name and menu */
 }
 
 /* Navbar Styling */
@@ -52,7 +52,7 @@ body {
     color: #0077ff;
 }
 
-/* Hero Section */
+/* Hero Section with Background Image */
 .hero {
     height: 100vh;
     display: flex;
