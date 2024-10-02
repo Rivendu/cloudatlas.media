@@ -9,12 +9,10 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
-    <!-- Navigation Bar with Horizontal Hamburger Menu -->
+    <!-- Header Section -->
     <header class="header">
+        <div class="brand-name">Cloud Atlas Media</div>
         <nav class="navbar">
-            <div class="logo">
-                <img src="images/logo.png" alt="Cloud Atlas Media" width="100">
-            </div>
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
@@ -22,32 +20,50 @@
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger-menu horizontal" id="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </nav>
     </header>
 
-    <!-- Case Studies Section -->
-    <section id="case-studies" class="case-studies">
-        <h2 data-aos="fade-up">Client Case Studies</h2>
-        <div class="case-study-grid">
-            <div class="case-study-item" data-aos="fade-right">
-                <h3>Client 1 - Paid Media Success</h3>
-                <img src="images/w11917-small.jpg" alt="Case Study Image">
-                <p>Client 1 saw a 300% increase in ROI through targeted paid media campaigns. Our team leveraged data to optimize ad spend and improve audience targeting.</p>
-            </div>
-            <div class="case-study-item" data-aos="fade-left">
-                <h3>Client 2 - Marketing Automation</h3>
-                <img src="images/w11917-small.jpg" alt="Case Study Image">
-                <p>Client 2 streamlined their customer journeys with our marketing automation solutions, resulting in a 40% increase in sales.</p>
-            </div>
-            <div class="case-study-item" data-aos="fade-right">
-                <h3>Client 3 - A/B Testing</h3>
-                <img src="images/w11917-small.jpg" alt="Case Study Image">
-                <p>Client 3 achieved a 20% boost in conversion rates by using our A/B testing strategies to refine their digital marketing assets.</p>
+    <!-- Case Study Section with Background -->
+    <section id="case-study" class="case-study-section">
+        <div class="case-study-background">
+            <img src="images/back1.jpg" alt="Background Image"> <!-- Using back1.jpg for background -->
+        </div>
+
+        <div class="case-study-content" data-aos="fade-up">
+            <h1 class="case-study-title">Case Study: Parfym Optimal COP</h1>
+            <p class="case-study-subtitle">Optimizing marketing spend and maximizing profit through data insights</p>
+
+            <!-- Talking Points with Images -->
+            <div class="talking-points">
+                <!-- Point 1 -->
+                <div class="talking-point" data-aos="fade-right">
+                    <img src="images/talking-point1.jpg" alt="Talking Point 1">
+                    <p><strong>Data Cleaning:</strong> We removed missing and unreliable values, grouping channel observations by date to ensure data integrity.</p>
+                </div>
+
+                <!-- Point 2 -->
+                <div class="talking-point" data-aos="fade-left">
+                    <img src="images/talking-point2.jpg" alt="Talking Point 2">
+                    <p><strong>Initial Regression Results:</strong> The estimated non-linear model shows how ad spend affects GP2, revealing Q4 overrepresentation due to holiday shopping.</p>
+                </div>
+
+                <!-- Point 3 -->
+                <div class="talking-point" data-aos="fade-right">
+                    <img src="images/talking-point3.jpg" alt="Talking Point 3">
+                    <p><strong>Excluding Q3 & Q4:</strong> The model adjusted to show the expected relation between GP2 and cost, revealing under-investment in Q1 and Q2 marketing.</p>
+                </div>
+
+                <!-- Point 4 -->
+                <div class="talking-point" data-aos="fade-left">
+                    <img src="images/talking-point4.jpg" alt="Talking Point 4">
+                    <p><strong>SEM COP Analysis:</strong> Weekly data reveals COP bandwidth for each quarter to maximize GP2, with different strategies for each season.</p>
+                </div>
+
+                <!-- Point 5 -->
+                <div class="talking-point" data-aos="fade-right">
+                    <img src="images/talking-point5.jpg" alt="Talking Point 5">
+                    <p><strong>Conclusions:</strong> We recommend increasing marketing spend in Q1-Q3 to reach optimal GP2, while also adjusting for specific channels like SEM.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -60,13 +76,6 @@
     <script>
         AOS.init({
             duration: 1200,
-        });
-
-        // Hamburger Menu Toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
         });
     </script>
 </body>
