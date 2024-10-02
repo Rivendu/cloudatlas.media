@@ -3,80 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Atlas Media - Case Studies</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <title>Case Studies</title>
+    <link rel="stylesheet" href="css/case-studies.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="header">
-        <div class="brand-name">Cloud Atlas Media</div>
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Case Study Section with Background -->
-    <section id="case-study" class="case-study-section">
-        <div class="case-study-background">
-            <img src="images/back1.jpg" alt="Background Image"> <!-- Using back1.jpg for background -->
+    <div class="section">
+        <h1 id="back1">Explore Our Case Studies</h1>
+    </div>
+
+    <div class="section hidden" id="content-section">
+        <div class="text swoop-left">
+            <h2>Case Study: Detailed Analysis</h2>
+            <p>Here is a detailed analysis of the case, showing key insights and solutions applied.</p>
         </div>
-
-        <div class="case-study-content" data-aos="fade-up">
-            <h1 class="case-study-title">Case Study: Parfym Optimal COP</h1>
-            <p class="case-study-subtitle">Optimizing marketing spend and maximizing profit through data insights</p>
-
-            <!-- Talking Points with Images -->
-            <div class="talking-points">
-                <!-- Point 1 -->
-                <div class="talking-point" data-aos="fade-right">
-                    <img src="images/talking-point1.jpg" alt="Talking Point 1">
-                    <p><strong>Data Cleaning:</strong> We removed missing and unreliable values, grouping channel observations by date to ensure data integrity.</p>
-                </div>
-
-                <!-- Point 2 -->
-                <div class="talking-point" data-aos="fade-left">
-                    <img src="images/talking-point2.jpg" alt="Talking Point 2">
-                    <p><strong>Initial Regression Results:</strong> The estimated non-linear model shows how ad spend affects GP2, revealing Q4 overrepresentation due to holiday shopping.</p>
-                </div>
-
-                <!-- Point 3 -->
-                <div class="talking-point" data-aos="fade-right">
-                    <img src="images/talking-point3.jpg" alt="Talking Point 3">
-                    <p><strong>Excluding Q3 & Q4:</strong> The model adjusted to show the expected relation between GP2 and cost, revealing under-investment in Q1 and Q2 marketing.</p>
-                </div>
-
-                <!-- Point 4 -->
-                <div class="talking-point" data-aos="fade-left">
-                    <img src="images/talking-point4.jpg" alt="Talking Point 4">
-                    <p><strong>SEM COP Analysis:</strong> Weekly data reveals COP bandwidth for each quarter to maximize GP2, with different strategies for each season.</p>
-                </div>
-
-                <!-- Point 5 -->
-                <div class="talking-point" data-aos="fade-right">
-                    <img src="images/talking-point5.jpg" alt="Talking Point 5">
-                    <p><strong>Conclusions:</strong> We recommend increasing marketing spend in Q1-Q3 to reach optimal GP2, while also adjusting for specific channels like SEM.</p>
-                </div>
-            </div>
+        <div class="image swoop-right">
+            <img src="images/graf.jpg" alt="Graph from Case Study">
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Cloud Atlas Media. All rights reserved.</p>
-    </footer>
+    <script src="js/case-studies.js"></script>
 
-    <script>
-        AOS.init({
-            duration: 1200,
-        });
-    </script>
 </body>
 </html>
